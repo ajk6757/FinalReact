@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*여기서부터 프로필 수정 폼*/
+.myinfo-setting-form-area {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 30vw;
+}
+
+.myinfo-setting-form {
+  width: 40vw;
+}
+
+.myinfo-setting-form-title {
+  width: 100%;
+  padding-top: 1vw;
+  border-bottom: 1px solid rgba(165, 164, 165, 0.45);
+  display: flex;
+  justify-content: center;
+}
+
+.myinfo-setting-form-title h3 {
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+.myinfo-setting-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  top: -7vw;
+  left: 10vw;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+/**********************************************************/
+.myprofile-setting-img-area {
+  width: 7vw;
+  height: 8vw;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  position: relative;
+  left: 8vw;
+  border-radius: 0.8vw;
+}
+/**********************************************************/
+
+.myprofile-setting-img-area img {
+  width: 100%;
+  /* 이미지를 부모 요소 너비에 맞게 늘림 */
+  height: 100%;
+  /* 이미지를 부모 요소 높이에 맞게 늘림 */
+  object-fit: cover;
+  /* 이미지 비율을 유지하면서 늘리거나 축소 */
+}
+
+.myprofile-setting-info {
+  position: relative;
+  left: 17vw;
+  top: -8.5vw;
+  font-size: 1.4vw;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.myinfo-setting-btns label {
+  margin-bottom: 0.8vw;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 0.8vw;
+  padding: 0;
+  position: relative;
+  left: 7vw;
+}
+.myinfo-setting-btns input {
+  display: none;
+}
+.myinfo-setting-btns label:hover {
+  font-weight: bold;
+}
+
+.myinfo-setting-introduce {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: -5vw;
+  left: 8vw;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.myinfo-setting-introduce-title {
+  margin-right: 0;
+  padding-right: 2vw;
+  padding-left: 5vw;
+}
+.myinfo-setting-introduce-title p {
+  font-size: 1vw;
+}
+/**********************************************************/
+.myinfo-setting-introduce-text {
+  width: 12vw;
+  font-weight: 200;
+  resize: none;
+}
+/**********************************************************/
+.myinfo-setting-introduce-text-area sup {
+  position: relative;
+  right: 4vw;
+  top: 1.5vh;
+  font-weight: 200;
+}
+.myprofile-setting-btn-area {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -4vh;
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.myprofile-setting-submit-btn {
+  margin: 2vw;
+  padding: 0.6vw 2vw;
+  background-color: #79a2d8c7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.myprofile-setting-back-btn {
+  margin: 2vw;
+  padding: 0.6vw 2vw;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

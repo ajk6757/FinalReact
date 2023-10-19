@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "TheJamsil5Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2")
+      format("woff2");
+    font-weight: 100;
+    font-style: normal;
+  }
+  .friend_box_main div {
+    font-family: "TheJamsil5Bold";
+  }
+  .friend_box_main {
+    border-top: 3px solid rgba(219, 220, 230, 1.5);
+    width: 51.9vw;
+    height: auto;
+    margin-top: 6vw;
+    display: flex;
+  }
+  .friend_box_search_list {
+    border-right: 3px solid rgba(219, 220, 230, 1.5);
+    overflow: scroll;
+    width: 22vw;
+    height: 42.1vw;
+    position: relative;
+  }
+  .friend_box_search_list::-webkit-scrollbar {
+    width: 0.1vw;
+  }
+  .friend_box_search_list > input {
+    width: 20vw;
+    height: 2.2vw;
+    border-radius: 0.4vw;
+    border: 1px solid rgba(219, 212, 225, 1);
+    margin: 1vw;
+  }
+  .Fasistrix {
+    position: absolute;
+    width: 2vw;
+    right: 1.1vw;
+    top: 1.4vw;
+  }
+  input::-ms-clear,
+  input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
+  .search_list_member {
+    margin: 1vw;
+    display: flex;
+    cursor: pointer;
+  }
+  .search_list_member:hover {
+    background-color: rgba(212, 212, 212, 0.1);
+  }
+  .memberName_friend {
+    margin-top: 1vw;
+    margin-left: 0.5vw;
+    font-weight: bolder;
+  }
+  .friend_info {
+    width: 8vw;
+    font-size: 0.8vw;
+  }
+  .friend_box_search_profile {
+    width: 28vw;
+  }
+  .friend_search_pf_main {
+    border-bottom: 1px solid rgba(219, 212, 225, 1);
+    width: 25vw;
+    margin-left: 3vw;
+    height: 20vw;
+  }
+  .pf_info {
+    position: fixed;
+    width: auto;
+    margin-left: 12vw;
+    margin-top: 5vw;
+  }
+  .friend_search_pf_main > img {
+    border-radius: 0.5vw;
+    width: 8vw;
+    height: 10vw;
+    margin-top: 3.5vw;
+    margin-left: 1.5vw;
+    position: fixed;
+  }
+  .pf_menu_ic {
+    position: fixed;
+  }
+  .pf_menu_ic > .pf_content {
+    margin-top: 16.5vw;
+    margin-left: 0.6vw;
+    cursor: pointer;
+  }
+  .pf_menu_ic > .pf_content > svg:not(:first-child) {
+    margin-left: 1vw;
+  }
+  .pf_music_content {
+    width: 100%;
+    margin-top: 11vw;
+    height: 8vw;
+  }
+  .pf_music_cover > img {
+    width: 10vw;
+  }
+  
+  .no {
+    display: block;
+  }
+  .yes {
+    display: none;
+  }
+  
+  .noSearch_friend {
+    font-family: "TheJamsil5Bold";
+    font-weight: 300;
+    margin-left: 1vw;
+  }
+  

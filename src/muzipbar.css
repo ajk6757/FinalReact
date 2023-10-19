@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+body{
+    margin: 0;
+}
+#muzipbar-outer svg{
+    color: white;
+}
+.최외곽{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 99999;
+    position: absolute;
+    left: 52vw;
+}
+.몸통영역{
+    width: 57vw;
+    height: 200vh;
+    display: flex;
+}
+.사이드바영역{
+    background-color:  #79a2d82c;
+    width: 5vw;
+    height: 100%;
+}
+.내용영역{
+    background-color: white;
+    width: 52vw;
+    height: 100%;
+}
+
+#muzipbar-outer{
+    width: auto;
+    height: auto;
+    min-height: 5.5vh;
+    margin-top: 1vh;
+    position: fixed;
+    overflow: hidden;
+    /* opacity: 0; */
+}
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+#muzipbar p{
+    font-family: 'TheJamsil5Bold';
+}
+#muzipbar{
+    background-color: #000000;
+    border-radius: 1.5vw;
+    width: 14vw;
+    height: 2.8vw;
+    transition: all 0.2s ease-in-out;
+}
+#muzipbar-normal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.normal-play svg{
+    margin-left: 1vw;
+}
+.normal-soundbar img{
+    width: 6vw;
+    height: 2vw;
+}
+.normal-sound svg{
+    margin-right: 1vw;
+}
+
+#muzipbar-player{
+    padding: 0.6vw 0.8vw 0.5vw 0.8vw;
+}
+#muzipbar-player-top{
+    display: flex;
+}
+.album-cover img{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+.playerInfo{
+    margin-left: 0.7vw;
+    width: 9.5vw;
+}
+.playerTitleBar{    
+    width: auto;
+}
+.myPlayListBtnOuter{
+    margin-top: 0.9vw;
+    cursor: pointer;
+}
+#playerSongTitle{
+    height: 1.5vw;
+    margin-top: 0.3vw;
+}
+#playerSongTitle p{
+    margin-top: 0vw;
+    font-size: 0.85vw;
+    color: rgba(255, 255, 255, 1);
+}
+#playerArtist{
+    height: 1.5vw;
+}
+#playerArtist p{
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    font-size: 0.4vw !important;
+    color: rgba(255, 255, 255, 1);
+}
+#muzipbar-player-bottom{
+    text-align: center;
+}
+.timeLine p{
+    margin-bottom: 0.2vw;
+    font-size: 0.45vw;
+    color:  white;
+}
+#playerTime{
+    margin-top: -0.3vw;
+    display: flex;
+    align-items: center;
+}
+#playerTime p{
+    font-size: 0.35vw;
+    margin-top: 0.3vw;
+}
+#timeLineBar{
+    width: 10.7vw;
+    height: 0.35vw !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.3vw;
+    margin-left: 0.2vw;
+    margin-right: 0.2vw;
+    cursor: pointer;
+}
+#currentTimeLineBar{
+    background-color:  #79a2d8c7;
+    height: 0.35vw !important;
+    width: 0vw;
+    margin: 0px;
+    border-radius: 0.3vw;
+}
+.playerButton svg{
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+#volumeBar{
+    width: 3.1vw;
+    height: 0.3vw ;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.3vw;
+    margin-left: 10.8vw;
+    margin-top: -0.7vw;
+    margin-bottom: 0.4vw;
+    cursor: pointer;
+    z-index: 100;
+}
+#currentVolumeBar{
+    background-color:  #79a2d8c7;
+    height: 0.3vw ;
+    margin: 0px;
+    border-radius: 0.3vw;
+}
+
+
+#muzipbar-lyrics{
+    text-align: center;
+}
+.toSongInfo{
+    background-color: white;
+    color: black;
+    width: 7.6vw;
+    height: 1.8vw;
+    border: none;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    font-size: 0.9vw;
+    cursor: pointer;
+    margin: 0.3vw;
+    margin-bottom: 0vw;
+}
+#lyricsContent p{
+    padding: 2vw;
+    padding-top: 0.3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7vw;
+    height: 16vw;
+    overflow-y: scroll;
+    text-align: left;
+    color: white;
+}
+#lyricsContent p::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+#songInfoContent p{
+    margin: 0vw 3vw 1vw 3vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9vw;
+    height: auto;
+    overflow-y: scroll;
+    text-align: left;
+    color: white;
+}
+#songInfoContent p:first-child{
+    margin-top: 2vw;
+}
+#songInfoContent p::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.lyrics-album-cover img{
+    margin-top: 2vw;
+    width: 8vw;
+    height: 8vw;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+.playListButton {
+    display: flex;
+    justify-content: center;
+    
+}
+.playListButton svg{
+    margin: 1vw 0.5vw 0.8vw 0.5vw;
+    cursor: pointer;
+}
+.playListButton input{
+    text-align: center;
+    margin-top: 0.85vw;
+    height: 1.6vw;
+    width: 7vw;
+    border-radius: 0.5vw;
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7vw;
+}
+
+.PlayListList{
+    height: 18.5vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.PlayListList::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.PlayListList div{
+    height: 4vw;
+}
+.PlayListList>div:first-child{
+    margin-top: 0.5vw;
+}
+.myPlayList{
+    margin-top: 0.6vw;
+    display: flex;
+    text-align: center;
+}
+.myPlayList p{
+    color: white;
+    width: 7.5vw;
+    margin-top: 0.6vw;
+    font-size: 0.8vw;
+    line-height: 2;
+    cursor: pointer;
+    overflow: hidden;
+}
+.myPlayList svg{
+    margin: 0vw 0.5vw 0vw 0.7vw;
+    cursor: pointer;
+}
+.myPlayList img{
+    margin: 0vw 0.5vw 0vw 0.7vw;
+    height: 3vw;
+    width: 3vw;
+    cursor: pointer;
+}
+.playlistDelete{
+    width: 1.8vw;
+    height: 1.8vw;
+    cursor: pointer;
+    padding-top: 0.8vw;
+}
+
+.recommendOptionDiv{
+    padding-bottom: 0.2vw;
+    margin-bottom: 0.3vw;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.recommendOption>tbody{
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9vw;
+    margin-left: 0.5vw;
+    width: 18vw;
+    text-align: center;
+}
+.recommendOption td{
+    width: 6vw;
+}
+.recommendOption input{
+    display: none;
+}
+.recommendOption label{
+    cursor: pointer;
+}
+
+div[id*=recommendList]{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 17vw;
+}
+div[id*=recommendList]::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+div[id*=recommendList]>div{
+    height: 2.5vw;
+    margin: 0.6vw 2.5vw 0vw 2.5vw;
+}
+div[id*=recommendList]>div:first-child{
+    margin-top: 0.5vw;
+}
+div[id*=recommendList] img{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 0.2vw;
+    cursor: pointer;
+}
+.toAddPlayListSong{
+    margin-bottom: 1vw;
+    align-items: center;
+}
+.searchSongOne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchSongOne>div{
+    width: 12vw;
+    display: flex;
+}
+.searchSongOne p{
+    margin-left: 0.5vw;
+    margin-top: 0.4vw;
+    font-size: 0.8vw;
+    color: white;
+    cursor: pointer;
+}
+.searchSongOne svg{
+    cursor: pointer;
+}
+
+
+.myPlayListBtns{
+    text-align: center;
+}
+.myPlayListBtns button{
+    background-color:  #e0eeff;
+    color: black;
+    width: 6vw;
+    height: 1.65vw;
+    border: none;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    font-size: 0.7vw;
+    cursor: pointer;
+    margin: 0.4vw;
+    margin-top: 0vw;
+}
+#myPlayListSongs{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 17vw;
+}
+#myPlayListSongs::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+#myPlayListSongs>div{
+    height: 2.5vw;
+    margin: 0.4vw 2.5vw 0vw 2.5vw;
+}
+#myPlayListSongs img{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 0.2vw;
+    cursor: pointer;
+}
+.playListCancel{
+    margin-top: -0.8vw;
+    cursor: pointer;
+}
+.myPlayListSong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.myPlayListSong>div{
+    display: flex;
+    width: 15vw;
+}
+.myPlayListSong p{
+    margin-left: 0.5vw;
+    margin-top: 0vw;
+    font-size: 0.8vw;
+    color: white;
+    cursor: pointer;
+}
+
+.addPlayListSongList{
+    height: 19vw;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addPlayListSongList::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+.addMyPlayListSong{
+    display: flex;
+    margin: 0.6vw;
+}
+.addMyPlayListSong p{
+    color: white;
+    font-size: 0.8vw;
+    width: 8vw;
+    text-align: center;
+    padding: 0.8vw 0vw 0vw 1.3vw;
+    cursor: pointer;
+}
+.addMyPlayListSong img{
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+}
+
+.addNewPlayListImg{
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+.addNewPlayList{
+    display: flex;
+    justify-content: center;
+}
+.addNewPlayList svg{
+    margin-left: 1vw;
+    cursor: pointer;
+}
+.addNewPlayList input{
+    margin-top: 0.4vw;
+    height: 1.5vw;
+    width: 12vw;
+    border-radius: 0.5vw;
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7vw;
+}
+
+
+div[id*=searchList]{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 17vw;
+}
+div[id*=searchList]::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+div[id*=searchList]>div{
+    height: 2.5vw;
+    margin: 0.4vw 2.5vw 0vw 2.5vw;
+}
+div[id*=searchList] img{
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 0.2vw;
+    cursor: pointer;
+}
+.searchSongOne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.searchSongOne>div{
+    width: 12vw;
+    display: flex;
+}
+.searchSongOne p{
+    margin-left: 0.5vw;
+    margin-top: 0vw;
+    font-size: 0.8vw;
+    color: white;
+    cursor: pointer;
+}
+.searchSongOne svg{
+    cursor: pointer;
+}

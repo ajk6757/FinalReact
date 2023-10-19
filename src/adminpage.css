@@ -1,0 +1,228 @@
+.admin_title_area {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* background-color: whitesmoke; */
+}
+.admin_title {
+  text-align: center;
+  margin: auto;
+}
+.admin_table_area {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+.admin_tb {
+  width: 100%;
+  height: 10vh;
+  border-top: 2px solid lightgray;
+  border-bottom: 2px solid lightgray;
+  text-align: center;
+}
+.admin_tb > thead {
+  /* background-color: #79a2d8da; */
+  /* color: #e0e0e0; */
+  height: 5vh;
+}
+.admin_tb > thead > tr > td {
+  box-sizing: border-box;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid lightgray;
+  border-collapse: collapse;
+  max-width: 5vw;
+  overflow: hidden;
+}
+.admin_tb > tbody > tr > td {
+  box-sizing: border-box;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  max-width: 5vw;
+  overflow: hidden;
+}
+.admin_tb > tbody > tr:hover {
+  background-color: #79a2d82c;
+  cursor: pointer;
+}
+.admin_membersearch_area {
+  width: 100%;
+  height: 5vh;
+
+  display: flex; /* Flexbox 활성화 */
+  justify-content: space-between; /* 내부의 요소들을 양끝에 정렬 */
+  align-items: center; /* 내부의 요소들을 수직으로 중앙에 배치 */
+}
+.admin_membersearch_bar_area {
+  display: flex; /* Flexbox 활성화 */
+}
+.admin_membersearch_bar {
+  display: flex;
+  align-items: center;
+  border: 0.1px solid black;
+  margin-right: 16px;
+  border-radius: 2px;
+}
+
+.admin_membersearch_bar input {
+  border: none;
+  /* background-color: beige; */
+  height: 2.5vh;
+}
+
+.admin_membersearch_bar button {
+  background: #79a2d8c3;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  height: 2.5vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin_member_filter {
+  margin-left: 16px;
+}
+
+.admin_modal {
+  margin-top: 20vh; /* 모달을 상단에서 아래로 이동. 원하는 값으로 조절 가능 */
+}
+
+.admin_member_modal_hd {
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽에 요소를 배치 */
+  align-items: center;
+  position: relative;
+  height: 7vh;
+}
+
+.admin_member_modal_title {
+  position: absolute; /* 제목을 절대 위치로 설정 */
+  left: 50%; /* 좌측에서 중앙으로 이동 */
+  top: 50%; /* 상단에서 중앙으로 이동 */
+  transform: translate(-50%, -50%); /* 정확한 중앙으로 이동 */
+  margin: 0; /* 기본 여백 제거 */
+}
+
+.admin_member_modal_hd .close {
+  position: absolute;
+  right: 1rem; /* 오른쪽에서 1rem 만큼 떨어지게 설정 */
+  top: 50%;
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
+}
+
+#admin_memberinfo table td {
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0; /* 셀 테두리 설정 */
+}
+#admin_memberinfo table td input {
+  width: 100%;
+  border: none;
+  /* border-bottom: 1px solid lightblue; */
+}
+#admin_memberinfo table {
+  width: 100%;
+  border-collapse: collapse;
+  /* display: flex;
+  justify-content: center; */
+}
+
+/* #admin_memberinfo td {
+  padding: 8px; 
+  border: 1px solid #e0e0e0;
+} */
+.admin_btn_area {
+  margin-top: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#admin_memberinfo button {
+  margin: 5px; /* 버튼 간격 */
+  padding: 8px 12px; /* 버튼 내부 패딩 */
+  cursor: pointer; /* 마우스 오버 시 포인터 아이콘으로 변경 */
+  border: none; /* 테두리 제거 */
+  background-color: #79a2d8c3; /* 배경색 */
+  color: #ffffff; /* 글자색 */
+  transition: background-color 0.3s; /* 배경색 애니메이션 효과 */
+}
+
+#admin_memberinfo button:hover {
+  background-color: #79a2d8fe; /* 마우스 오버 시 배경색 */
+}
+
+.admin_search_filter {
+  margin-right: 1px;
+}
+
+/*음악부분*/
+.admin_music_modal {
+  margin-top: 8vh; /* 모달을 상단에서 아래로 이동. 원하는 값으로 조절 가능 */
+}
+
+.adminMusicDetail {
+  width: 5vw;
+}
+
+.admin_music_lyrics {
+  height: 17vh;
+}
+.admin_music_lyrics .lyricsArea {
+  margin: 0px;
+  padding: 0px;
+}
+.admin_music_lyrics textarea {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  resize: none;
+  height: 17vh;
+  border: none;
+  overflow-y: scroll; /* 세로 스크롤이 필요할 때만 스크롤이 생기도록 설정 */
+  overflow-x: hidden; /* 가로 스크롤은 숨김 처리 */
+}
+.admin_music_lyrics textarea::-webkit-scrollbar {
+  display: none; /* 크롬, 사파리, 오페라, 엣지 */
+}
+
+#updateAlbumCoverWrap {
+  width: auto;
+  height: 6vw;
+  text-align: center;
+}
+
+#updateCoverImagePreview {
+  width: 6vw;
+  height: 6vw;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#updateAlbumCoverUpdate {
+  display: none;
+}
+
+#updateMusicSourceWrap {
+  text-align: center;
+}
+#updateWMBW {
+  margin: 0.3vw;
+}
+#updateMusicBtn {
+  width: 6vw;
+  height: 3.4vh;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  line-height: 1.7;
+  overflow: hidden;
+  cursor: pointer;
+}
+#updateMusicSource {
+  display: none;
+}

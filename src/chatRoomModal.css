@@ -1,0 +1,41 @@
+.chatRoom_modal{ 
+    position:absolute; width:100%; height:100%; background: rgba(0,0,0,0.8); top:0; left:0; z-index: 2000;
+  }
+  
+  .chatRoom_content{
+    width:25vw; height:30vw;
+    background:#fff; border-radius:10px;
+    position:relative; top:20%; left:47%;
+    margin-top: -1vw; margin-left:-10vw;
+    text-align:center;
+    box-sizing:border-box; 
+  }
+  #chatRoom_exit{
+    margin-left: 21.5vw; margin-top: 0.7vw;
+  }
+  #chatRoom_exit:hover{
+    cursor: pointer;
+  }
+  .chatRoom_content>input{
+    width: 15vw; height: 1.5vw; border-radius: 0.3vw;
+  }
+  .chatRoom_friendList{ width:15vw; height: 17vw; overflow:scroll;
+    margin-top: 1vw; margin-left: 5vw; margin-bottom: 1vw;
+  }
+  .chatRoom_friendList::-webkit-scrollbar{width: 0;}
+
+  #chatRoom_member{
+    background-color:#79a2d82c;
+    border:none;
+    margin-top: 1vh;
+    border-radius: 0.15vw;
+    width: 15vw; height: 2.5vw;
+  }
+  .chat_mk_img{cursor: pointer;}
+  #chatRoom_member:hover{
+    background-color:rgba(121, 162, 216, 1);
+    cursor: pointer;
+  }
+  .search_chat_member{display: flex; margin-top: 0.5vw;}
+  .search_chat_member>div{margin-right: auto; margin-top: 0.7vw; margin-left: 0.3vw; font-weight: bold; font-size: large;}
+  .jo_mnm{border-radius: 1vw; width: 2vw; height:2vw}

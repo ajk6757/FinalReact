@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Lora&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Quicksand:wght@300;400&family=Qwitcher+Grypen:wght@700&family=Sedgwick+Ave+Display&display=swap");
+@font-face {
+  font-family: "suite1";
+  src: url("./fonts/SUITE-Light.ttf");
+}
+
+@font-face {
+  font-family: "suite2";
+  src: url("./fonts/SUITE-Medium.ttf");
+}
+
+@font-face {
+  font-family: "suite3";
+  src: url("./fonts/SUITE-Regular.ttf");
+}
+
+@font-face {
+  font-family: "suite4";
+  src: url("./fonts/SUITE-Heavy.ttf");
+}
+
+@font-face {
+  font-family: "suite5";
+  src: url("./fonts/SUITE-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "suite6";
+  src: url("./fonts/SUITE-Bold.ttf");
+}
+@font-face {
+  font-family: "suite7";
+  src: url("./fonts/SUITE-ExtraBold.ttf");
+}
+/*기본 가장 큰 박스 틀*/
+.main_content {
+  width: 51vw;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+
+.main_content::-webkit-scrollbar {
+  display: none;
+}
+
+#myprofile-img {
+  width: 100%;
+  /* 이미지를 부모 요소 너비에 맞게 늘림 */
+  height: 100%;
+  /* 이미지를 부모 요소 높이에 맞게 늘림 */
+  object-fit: cover;
+  /* 이미지 비율을 유지하면서 늘리거나 축소 */
+}
+.myprofile-img {
+  width: 7vw; /**/
+  height: 8vw; /**/
+  border-radius: 0.8vw; /**/
+  position: relative;
+  top: -3.5vw; /**/
+  left: 5.5vw; /**/
+  margin-bottom: 2.5vw; /**/
+  overflow: hidden;
+}
+
+#profile-back-img {
+  width: 100%;
+  height: 35vh;
+  text-align: center;
+}
+/***************************************************************************/
+#profile-back-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/***************************************************************************/
+#myinfo {
+  width: 80%;
+  height: 15vh;
+  display: flex;
+  margin: auto;
+  position: relative;
+  top: -10.3vw; /**/
+}
+
+#myinfo-text {
+  width: 22vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  align-items: flex-start; /* 왼쪽 정렬 */
+  position: relative;
+  left: 9vw;
+}
+
+#myinfo-text p {
+  margin: 0;
+}
+
+#myinfo-setting a {
+  width: 2vw;
+  height: 4vh;
+  cursor: pointer;
+}
+
+#myinfo-setting {
+  width: 10%;
+  text-align: right;
+  margin-top: 2.5vh;
+  position: relative;
+  left: 14vw;
+}
+
+#myfeed {
+  width: 80%;
+  height: 20%;
+  min-height: 10vh;
+  margin: auto;
+  background-color: honeydew;
+}
+
+/*여기서 부터 닉네임 아이디 이런 텍스트 부분*/
+.myinfo-idzone {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7vw;
+}
+
+.myinfo-nick {
+  font-size: 1vw;
+  margin-right: 0.8vw;
+  font-weight: bold;
+  font-family: "suite2";
+}
+
+.myinfo-id {
+  color: gray;
+  font-size: 0.7vw;
+  font-family: "suite2";
+}
+.myinfo-mark {
+  margin-left: 0.3vw;
+  width: 0.8vw;
+  height: 1.6vh;
+}
+.myinfo-followzone {
+  list-style: none;
+  padding: 1vh 0;
+  margin: 0;
+  display: flex;
+  font-size: 0.7vw;
+}
+
+.myinfo-followzone li {
+  justify-content: flex-start;
+  margin-right: 10px;
+  cursor: pointer;
+  font-family: "suite2";
+}
+
+.myinfo-followzone li span {
+  margin-left: 0.3vw;
+}
+
+.myinfo-introduce {
+  font-size: 0.6vw;
+  font-family: "suite2";
+}
+
+/*여기는 마이페이지 메뉴바*/
+.mypage-menubar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -11.2vw; /**/
+  left: 5.2vw;
+  width: 80%;
+  height: 5vh;
+  border-bottom: 1px solid rgba(165, 164, 165, 0.45);
+}
+
+.mypage-menubar div {
+  width: 2.5vw;
+  height: 5vh;
+  margin-right: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+/*클릭시 이벤트*/
+.mypage-menubar .active {
+  border-bottom: 1.7px solid gray;
+}

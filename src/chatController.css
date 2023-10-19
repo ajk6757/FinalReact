@@ -1,0 +1,13 @@
+.chatController_main{background-color: rgba(194, 213, 233, 0.626); width: 9vw; height: 13vw; position: fixed; right:22vw; top:9.5vw;
+border-radius: 0.8vw;}
+.chatController_main div,p{font-family: 'TheJamsil5Bold';}
+.groupmember_list{width:8vw; height:9.5vw; margin-left:0.5vw; overflow: scroll;}
+.groupmember_selectM{margin-top: 0.3vw;}
+.groupmember_list::-webkit-scrollbar{width: 0;}
+.gmgImg{border-radius: 1vw; width: 2vw; height:2vw}
+
+.only_two{display: flex; justify-content: center;}
+.only_two>button{margin: auto; border: 0; border-radius: 0.3vw; height: 1.3vw;}
+.only_two>button:hover{background-color: rgba(121, 162, 216, 1); cursor: pointer;}
+.yes{display: none;} .no{display: block;}
+.chatController_main>p{margin:auto; text-align: center; margin-top: 0.5vw;}

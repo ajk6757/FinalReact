@@ -1,0 +1,279 @@
+/*마이페이지마이인포에 팔로우 모달창 css*/
+.myinfo-follow-modal-header {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(165, 164, 165, 0.45);
+}
+.myinfo-follow-modal-header p {
+  position: relative;
+  left: 7vw;
+  font-size: medium;
+  margin: 1vw;
+  font-weight: bold;
+}
+.myinfo-follow-modal-close {
+  position: relative;
+  left: 12.6vw;
+  top: 1vh;
+}
+
+.myinfo-follow-modal-search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.5vh;
+}
+.myinfo-follow-modal-search {
+  width: 92%;
+  height: 75%;
+  padding: 0 0.8vw;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myinfo-follow-modal-search-reset-icon {
+  border: none;
+  background-color: #e0e0e0;
+}
+.myinfo-follow-modal-search-reset-icon img {
+  width: 1.2vw;
+  position: relative;
+  right: -0.5vw;
+  opacity: 0.7;
+}
+.myinfo-follow-modal-search input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #e0e0e0;
+}
+.myinfo-follow-modal-search input::placeholder {
+  font-size: 12px;
+  opacity: 0.4;
+  position: relative;
+  top: -0.2vh;
+}
+.myinfo-follow-list {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: scroll;
+  position: relative;
+  height: 40vh;
+}
+.myinfo-follow-list-content {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.myinfo-follow-list-img-area {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.myinfo-follow-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.myinfo-follow-list-id {
+  width: auto;
+  max-width: 10vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+.myinfo-follow-list-btn {
+  position: absolute;
+  right: 8px;
+  overflow: hidden;
+}
+
+/*마이페이지마이인포에 팔로워 모달창 css*/
+.myinfo-follower-modal-header {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(165, 164, 165, 0.45);
+}
+.myinfo-follower-modal-header p {
+  position: relative;
+  left: 7vw;
+  font-size: medium;
+  margin: 1vw;
+  font-weight: bold;
+}
+.myinfo-follower-modal-close {
+  position: relative;
+  left: 12.6vw;
+  top: 1vh;
+}
+
+.myinfo-follower-modal-search-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.5vh;
+}
+.myinfo-follower-modal-search {
+  width: 92%;
+  height: 75%;
+  padding: 0 0.8vw;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myinfo-follow-modal-search-reset-icon {
+  border: none;
+  background-color: #e0e0e0;
+}
+.myinfo-follow-modal-search-reset-icon img {
+  width: 1.2vw;
+  position: relative;
+  right: -0.5vw;
+  opacity: 0.7;
+}
+.myinfo-follower-modal-search input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background-color: #e0e0e0;
+}
+.myinfo-follower-modal-search input::placeholder {
+  font-size: 12px;
+  opacity: 0.4;
+  position: relative;
+  top: -0.2vh;
+}
+.myinfo-follower-list {
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: scroll;
+  position: relative;
+  height: 40vh;
+}
+.myinfo-follower-list-content {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.myinfo-follower-list-img-area {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 17px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.myinfo-follower-list-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.myinfo-follower-list-id {
+  width: auto;
+  max-width: 10vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+.myinfo-follower-list-btn {
+  position: absolute;
+  right: 8px;
+}
+
+.myinfo-follow-list-no-results {
+  display: flex;
+  justify-content: center;
+}
+/*마이페이지마이인포에 팔로워 모달창 css 끝  */
+
+/* styles.css */
+.myinfo-upfollow-btn {
+  /* 팔로우 버튼의 기본 스타일 */
+  background-color: #79a2d8c7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 4vw;
+  height: 3.5vh;
+}
+
+.myinfo-unfollow-btn {
+  /* 언팔로우 버튼의 스타일 */
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 6vw;
+  height: 3.5vh;
+}
+
+.myinfo-confirm-unfollow-btn {
+  /* 언팔로우 확인 버튼의 스타일 */
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 6vw;
+  height: 3.5vh;
+}
+
+.followModal-confirm-unfollow-btn {
+  /* 언팔로우 확인 버튼의 스타일 */
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 5vw;
+  height: 3.5vh;
+  font-size: small;
+}
+.followModal-unfollow-btn {
+  /* 언팔로우 버튼의 스타일 */
+  background-color: lightgray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 5vw;
+  height: 3.5vh;
+  font-size: small;
+}
+.followModal-follow-btn {
+  background-color: #79a2d8c7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 3vw;
+  height: 3.5vh;
+  font-size: small;
+}

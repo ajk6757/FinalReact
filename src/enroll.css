@@ -1,0 +1,96 @@
+
+#bt{ position:absolute; top:50%; left:50%;
+  width:120px; height:30px; margin-top:-15px; margin-left:-60px;
+  line-height:15px; cursor:pointer;
+}
+
+.enroll_modal{ 
+  position:absolute; width:100%; height:100%; background: rgba(0,0,0,0.8); top:0; left:0; 
+}
+
+.enroll_content{
+  width:25vw; height:30vw;
+  background:#fff; border-radius:10px;
+  position:relative; top:20%; left:47%;
+  margin-top: -1vw; margin-left:-10vw;
+  text-align:center;
+  box-sizing:border-box; 
+}
+#enroll_exit{
+  margin-left: 21.5vw; margin-top: 0.7vw;
+}
+#enroll_exit:hover{
+  cursor: pointer;
+}
+
+#enroll_logo{
+  display:block;
+  margin-left: 8.8vw;
+}
+
+.enrollMuzipLogo{
+  color: #5b7ba5;
+  width: 120px;
+}
+.enrollMuzipLogoWrap{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2vh;
+}
+
+#enroll_input_val{
+  margin-top: 0.5vw;
+  border:solid 0.1px lightgray;
+  border-radius: 0.15vw;
+  width: 15vw; height: 1.75vw;
+}
+.captcha{
+  margin-top: 1.5vw; margin-left: 4.5vw;
+}
+#enroll_member{
+  background-color:#79a2d82c;
+  border:none;
+  margin-top: 2vh;
+  border-radius: 0.15vw;
+  width: 15vw; height: 2.5vw;
+}
+
+#enroll_member:hover{
+  background-color:rgba(121, 162, 216, 1);
+  cursor: pointer;
+}
+
+#enroll_login{
+  background-color:#79a2d82c;
+  margin-top: 2vh;
+  border-radius: 0.15vw;
+  width: 15vw; height: 2.5vw;
+}
+
+#enroll_login:hover{
+  background-color:rgba(121, 162, 216, 1);
+  cursor: pointer;
+}
+
+.idCheck_box{
+  /* display:none; */
+  margin-bottom: -3vh;
+  text-align: left;
+  margin-left: 5vw;
+  font-weight: bold;
+  font-size: 0.7vw;
+}
+.blueText {
+  color: blue;
+}
+
+.redText {
+  color: red;
+}
+.displayNone{
+  display:none;
+}
+.displayBlock{
+  display: block;
+}

@@ -1,0 +1,95 @@
+#setting_contact_wrap {
+    /* border: 1px solid red; */
+}
+
+#setting_contact_title {
+    margin-top: 1vw;
+    text-align: center;
+}
+
+#setting_contact_research {
+    /* border: 1px solid red; */
+    text-align: right;
+    margin: 0.7vw 0vw;
+}
+
+
+
+#setting_contact_research select {
+    width: 3vw;
+    height: 1.6vw;
+    background-color: #e2eeff;
+    border-radius: 3px;
+}
+
+.contactBar {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#setting_contact_tb {
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+}
+
+#setting_contact_tb thead {
+    /* background-color: #e2eeff; */
+    background-color: #79a2d82c;
+    border-top: 2px solid rgb(104, 104, 104);
+}
+
+#setting_contact_tb td {
+    border-bottom: 2px solid rgb(207, 207, 207);
+    height: 2vw;
+}
+
+#setting_contact_write {
+    text-align: right;
+    margin: 0.7vw 0vw;
+    /* border: 1px solid red; */
+}
+
+
+
+.contact_text_insert {
+    width: 22vw;
+
+}
+
+#contact_textarea_text {
+    display: inline-block;
+    position: relative;
+    bottom: 9vw;
+}
+
+.contact_textarea_insert {
+    height: 10vw;
+    width: 22vw;
+    margin-top: 0.5vw;
+    resize: none;
+    position: relative;
+    left: 0.3vw;
+}
+#myinfoInputBox{
+    position: relative;
+}
+
+.idCheck_box{
+    /* display:none; */
+    margin-bottom: -3vh;
+    text-align: left;
+    margin-left: 5vw;
+    font-weight: bold;
+    font-size: 0.7vw;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: -2.6vw;
+  }
+
+.blueText {
+    color: blue;
+}
+
+.redText {
+    color: red;
+}

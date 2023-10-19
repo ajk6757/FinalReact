@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        margin: 0;
+        background-color: rgb(189, 159, 48);
+
+    }
+</style>
+</head>
+<body>
+<script>
+    const circle = document.getElementsByTagName("span");
+
+    const observer = new IntersectionObserver((items) => {
+        console.log(items);
+    });
+
+    observer.observe(circle);
+</script>
+
+        <div id="feedContent">
+            <input type="audio">
+            <span id="circle"></span>
+       
+        </div>
+
+</body>
+</html>

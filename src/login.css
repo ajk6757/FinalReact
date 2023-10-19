@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+*{
+  box-sizing: border-box;
+}
+
+.loginMuzipLogo h2{
+  justify-content: center;
+  font-family: "Rancho", cursive;
+  font-size: 2.5vw;
+}
+  .enroll_modal_login{ 
+    background: rgba(0,0,0,0);
+  }
+  
+  .enroll_content_login{
+    border: 1px solid #79a2d82c;
+    width:25vw; height:30vw;
+    background:#fff; border-radius:10px;
+    position:relative; top:20%; left:47%;
+    margin-top: 10vw; margin-left:1.7vw; 
+    text-align:center;
+    box-sizing:border-box; 
+  }
+  
+  #enroll_logo_login{
+    margin-top: 3vw;
+  }
+  
+  #enroll_input_val_login{
+    margin-top: 1.5vh;
+    border:solid 0.1px lightgray;
+    border-radius: 0.15vw;
+    width: 15vw; height: 1.75vw;
+  }
+  
+  #enroll_login{
+    background-color:#79a2d82c;
+    border:none;
+    margin-top: 2vh;
+    border-radius: 0.15vw;
+    width: 15vw; height: 2vw;
+  }
+  
+  #enroll_login:hover{
+    background-color:rgba(121, 162, 216, 1);
+    cursor: pointer;
+  }
+  
+  #login_find{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
+    margin-top: 1vw;
+  }
+
+  #login_find:hover{
+    cursor: pointer;
+  }
